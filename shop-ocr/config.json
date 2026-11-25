@@ -1,0 +1,26 @@
+{
+  "taskSpace": "shop-collect",
+  "source": "fxg",
+  "url": "https://fxg.jinritemai.com/",
+  "waitFor": "",
+  "capture": {
+    "selector": "",
+    "padding": 8
+  },
+  "ocr": {
+    "lang": "chi_sim+eng",
+    "psm": 6,
+    "tesseract_cmd": ""
+  },
+  "fields": [
+    { "key": "gmv_today", "label": "今日支付金额", "unit": "CNY", "min": 0, "max": 100000000 },
+    { "key": "orders_today", "label": "今日订单量", "unit": "count", "min": 0, "max": 1000000 },
+    { "key": "visitors", "label": "访客数", "unit": "count", "min": 0, "max": 10000000 },
+    { "key": "cvr", "label": "成交转化率", "unit": "%", "min": 0, "max": 100 },
+    { "key": "refund", "label": "退款金额", "unit": "CNY", "min": 0, "max": 100000000 }
+  ],
+  "api": {
+    "url": "",
+    "token": ""
+  }
+}
